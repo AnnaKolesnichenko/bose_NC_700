@@ -12,73 +12,103 @@
     <link rel="stylesheet" href="https://drive.google.com/drive/folders/1q9uAn3ZB5zMrb-upqxa2IBzzFJQ0Ukjt?usp=sharing">
     <link rel="stylesheet" href="./stylesheet.css"/>
     <link rel="stylesheet" href="./index.css"/>
+    <link rel="stylesheet" href="./index_tablet.css"/>
+    <link rel="stylesheet" href="./index_desktop.css"/>
 
 </head>
 <body>
     <header>
         <nav class="nav container">
-            <a href="/">
-                <svg class="main-logo">
-                    <use href="./images/symbol-defs.svg#icon-bose-logo-2"></use>
-                </svg>
-            </a>
-            <ul class="navigation list">
-                <li class="navigation-item">
-                    <a href="">Characteristics</a>
-                </li>
-                <li class="navigation-item">
-                    <a href="">History</a>
-                </li>
-                <li class="navigation-item">
-                    <a href="">Reviews</a>
-                </li>
-                <li class="navigation-item">
-                    <a href="">Payment and delivery</a>
-                </li>
-            </ul>
-            <a href="" class="mobile-menu">
-                <svg class="mobile-menu_icon">
-                    <use href="./images/symbol-defs.svg#icon-hamburger"></use>
-                </svg>
-            </a>
+            <div class="header">
+                <a href="/">
+                    <svg class="main-logo">
+                        <use href="./images/symbol-defs.svg#icon-bose-logo-2"></use>
+                    </svg>
+                </a>
+                <ul class="navigation list">
+                    <li class="navigation-item">
+                        <a href="">Characteristics</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="">History</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="">Reviews</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="">Payment and delivery</a>
+                    </li>
+                </ul>
+                <a href="" class="mobile-menu">
+                    <svg class="mobile-menu_icon">
+                        <use href="./images/symbol-defs.svg#icon-hamburger"></use>
+                    </svg>
+                </a>
+            </div>
         </nav>
     </header>
     <main>
         <section class="hero">
             <h1 class="visually-hidden">Headphones Bose NC 700</h1>
             <div class="container">
-                <div class="hero-description">
-                    <p class="hero-description_p">Noise cancellation headphones 
-                        that are capable for a lot of things</p>
-                    <p class="hero-description_h">Up to 20 hours<br> of playback</p>
-                    <h2 class="hero-description_main">headphones bose nc 700</h2>
-                    <button type="button" class="main-order">order</button>
+                <div class="hero-area">
+                    <div class="hero-description">
+                        <p class="hero-description_p">Noise cancellation headphones 
+                            that are capable for a lot of things</p>
+                        <p class="hero-description_h">Up to 20 hours<br> of playback</p>
+                        <h2 class="hero-description_main">headphones bose nc 700</h2>
+                        <button type="button" class="main-order">order</button>
+                    </div>
+                    <div class="hero-img">
+                        <picture>
+                            <source srcset="./images/desktop/bose_hero.jpg 1x,
+                                    ./images/desktop/bose_hero@2x.jpg 2" width="700"
+                                    media="(min-width: 1440px)"/>
+                            <source srcset="./images/tablet/hero.jpg 1x,
+                                    ./images/tablet/hero@2x.jpg 2x" width="354"
+                                    media="(min-width: 768px)"/>
+                            <img src="./images/mobile-img/img_hero.jpg"
+                                    alt="black bose headphones"
+                                    width="280"/>
+                        </picture>
+                    </div> 
                 </div>
-                <div class="hero-img">
-                    <img class="hero-img_black" src="./images/img_hero.jpg" alt="black bose headhones" width="280">
-                </div> 
             </div>  
         </section>
 
         <section class="design">
             <h1 class="visually-hidden">Premium design and comfort</h1>
             <div class="container">
-                <div class="design-div">
-                    <h2 class="design-div_title">premium design and comfort</h2>
-                    <h3 class="design-div_ad">11 levels of noise reduction</h3>
-                    <p class="design-div_p">With the new Bose Noise Canceling Headphone 700, 
-                        you can smoothly increase or decrease the level of noise cancellation. 
-                        You can be heard perfectly and you hear the interlocutor clearly, 
-                        even in a noisy environment!</p>
-                </div>
-                <div class="design-div">
-                    <h2 class="design-div_ad">Comfort up to max level</h2>
-                    <p class="design-div_p">Stylish, lightweight stainless steel headband with soft, 
-                        angled cups of headphones for comfortable seating. 
-                        The inner side is made of soft gel lining that fits well to the head.</p>
-                </div>
-                <div class="design-div_img">
-                    <img class="design-div_bose" src="./images/blonde_girl.jpg" alt="woman in black bose" width="280">
+                <div class="design-area">
+                    <div class="design-reverse">
+                        <div class="design-div">
+                            <h2 class="design-div_title">premium design and comfort</h2>
+                            <h3 class="design-div_ad">11 levels of noise reduction</h3>
+                            <p class="design-div_p">With the new Bose Noise Canceling Headphone 700, 
+                                you can smoothly increase or decrease the level of noise cancellation. 
+                                You can be heard perfectly and you hear the interlocutor clearly, 
+                                even in a noisy environment!</p>
+                        </div>
+                        <div class="design-div">
+                            <h2 class="design-div_ad">Comfort up to max level</h2>
+                            <p class="design-div_p">Stylish, lightweight stainless steel headband with soft, 
+                                angled cups of headphones for comfortable seating. 
+                                The inner side is made of soft gel lining that fits well to the head.</p>
+                        </div>
+                    </div>
+                    <div class="design-div_img">
+                        <picture>
+                            <source srcset="./images/desktop/blonde_girl.jpg 1x,
+                                    ./images/desktop/blonde_girl@2x.jpg 2x"
+                                    media="(min-width: 1440px)" width="590"/>
+                            <source srcset="./images/tablet/blonde_girl.jpg 1x,
+                                    ./images/tablet/blonde_girl@2x.jpg 2x"
+                                    media="(min-width: 768px)" width="354"/>
+                            <img src="./images/mobile-img/blonde_girl.jpg"
+                                    alt="woman in black bose"
+                                    width="280"/>
+                        </picture>
+                    </div>
                 </div>
             </div>
         </section>
@@ -106,21 +136,34 @@
             <h1 class="visually-hidden">The luxury of silence</h1>
             <div class="container">
                 <div class="sound-system">
-                    <h2 class="sound-title">the luxury of sound</h2>
-                    <img class="sound-img" src="./images/sunset.jpg" alt="sunset headphones in the sunset" width="280">
-                    <ul class="sound-benefits list">
-                        <li class="sound-benefits_item">
-                            <h3 class="sound-benefits_title">Maximum enjoyment</h3>
-                            <p class="sound-benefits_p">In order to create a comfortable atmosphere - raise 
-                                the level by level from the "transparent" mode to the maximum blocking of sounds. 
-                                The conversation mode can be activated in one click using a special button.</p>
-                        </li>
-                        <li class="sound-benefits_item">
-                            <h3 class="sound-benefits_title">Crystal sound</h3>
-                            <p class="sound-benefits_p">The speaker system and brand name active equalizer are able to provide high-quality and powerful sound at any volume level. 
-                                You can be sure of no distortion and crystal clear at high and low frequencies.</p>
-                        </li>
-                    </ul>
+                    <h2 class="sound-title">the luxury of silence</h2>
+                    <div class="sound-img">
+                        <picture>
+                            <source srcset="./images/desktop/sunset.jpg 1x,
+                                    ./images/desktop/sunset@2x.jpg 2x"
+                                    media="(min-width: 1440px)"/>
+                            <source srcset="./images/tablet/sunset.jpg 1x,
+                                    ./images/tablet/sunset@2x.jpg 2x" width="768"
+                                    media="(min-width: 768px)"/>
+                            <img src="./images/mobile-img/sunset.jpg"
+                                    alt="headphones in the sunset"
+                                    width="280"/>
+                        </picture>
+                    </div>
+
+                        <ul class="sound-benefits list">
+                            <li class="sound-benefits_item">
+                                <h3 class="sound-benefits_title">Maximum enjoyment</h3>
+                                <p class="sound-benefits_p">In order to create a comfortable atmosphere - raise 
+                                    the level by level from the "transparent" mode to the maximum blocking of sounds. 
+                                    The conversation mode can be activated in one click using a special button.</p>
+                            </li>
+                            <li class="sound-benefits_item">
+                                <h3 class="sound-benefits_title">Crystal sound</h3>
+                                <p class="sound-benefits_p">The speaker system and brand name active equalizer are able to provide high-quality and powerful sound at any volume level. 
+                                    You can be sure of no distortion and crystal clear at high and low frequencies.</p>
+                            </li>
+                        </ul>
                 </div>
             </div>
         </section>
@@ -129,15 +172,28 @@
             <h1 class="visually-hidden">Bose AR</h1>
             <div class="container">
                 <div class="tech-dept">
-                    <h2 class="tech-title">bose ar</h2>
+                    <div class="tech-descr">
+                        <h2 class="tech-title">bose ar</h2>
                     <h3 class="tech-main">Brand name and technology</h3>
                     <p class="tech-descr">Bose AR is a unique audio platform augmented reality, that opens before  you new facets of sound. 
                         It allows you 
                         to stay connected to the real world and immerse yourself in the virtual universe
                         at the same time.
                     </p>
+                    </div>
                     <div class="tech-img">
-                        <img class="tech-img_bose" src="./images/girl_cup.jpg" alt="woman in black bose with a cup" width="">
+                        <picture>
+                            <source srcset="./images/desktop/girl_cup.jpg 1x,
+                                    ./images/desktop/girl_cup@2x.jpg 2x"
+                                    media="(min-width: 1440px)"/>
+                            <source srcset="./images/tablet/girl_cup.jpg 1x,
+                                    ./images/tablet/girl_cup@2x.jpg 2x" width="354"
+                                    media="(min-width: 768px)"/>
+                            <img src="./images/mobile-img/girl_cup.jpg"
+                                    alt="woman in black bose with a cup"
+                                    width="280"/>
+                        </picture>
+
                     </div>
                 </div>
             </div>
@@ -147,7 +203,8 @@
             <h1 class="visually-hidden">Guarantees</h1>
             <div class="container">
                 <div class="guarantee-part">
-                    <h2 class="guarantee-part_title">guarantees</h2>
+                    <div class="guarantee-area">
+                        <h2 class="guarantee-part_title">guarantees</h2>
                     <ul class="guarantee-list list">
                         <li class="guarantee-list_item">
                             <h3 class="guarantee-list_h">90 Day Money Back Guarantee</h3>
@@ -160,8 +217,20 @@
                                 send you new ones.</p>
                         </li>
                     </ul>
+                    </div>
                     <div class="guarantee-img">
-                        <img class="guarantee-img_white" src="./images/white_down.jpg" alt="white bose headphones" width="280">
+                        <picture>
+                            <source srcset="./images/desktop/grey_down.jpg 1x,
+                                    ./images/desktop/grey_down@2x.jpg 2x"
+                                    media="(min-width: 1440px)"/>
+                            <source srcset="./images/tablet/grey_down.jpg 1x,
+                                    ./images/tablet/grey_down@2x.jpg 2x" width="354"
+                                    media="(min-width: 768px)"/>
+                            <img src="./images/mobile-img/white_down.jpg"
+                                    alt="whitye bose headphones"
+                                    width="280"/>
+                        </picture>
+
                     </div>
                 </div>
             </div>
@@ -171,40 +240,68 @@
             <h1 class="visually-hidden">Brand creation history</h1>
             <div class="container">
                 <div class="history-part">
-                    <div class="history-title">
-                        <h2 class="history-title_main">brand creation history</h2>
-                        <svg class="union">
-                            <use href="./images/symbol-defs.svg#icon-Union"></use>
-                        </svg>
+                    <div class="history-area">
+                        <div class="history-title">
+                            <h2 class="history-title_main">brand creation history</h2>
+                            <svg class="union">
+                                <use href="./images/symbol-defs.svg#icon-Union"></use>
+                            </svg>
+                        </div>
+                        <p class="history-one">The history of Bose Corporation began 
+                            with disappointment. In 1956, MIT graduate student Amar Bose bought one 
+                            of the best stereo systems at the time for his home.
+                            After a few minutes of listening to the audio recording, his bewilderment turned 
+                            to disappointment. 
+                        </p>
+                        <picture class="history-img_one">
+                            <source srcset="./images/desktop/guys.jpg 1x,
+                                    ./images/desktop/huys@2x.jpg 2x"
+                                    media="(min-width: 1440px)"/>
+                            <source srcset="./images/tablet/guys.jpg 1x,
+                                    ./images/tablet/guys@2x.jpg 2x" width="354"
+                                    media="(min-width: 768px)"/>
+                            <img src="./images/mobile-img/guys.jpg"
+                                    alt="history photo two guys"
+                                    width="280"/>
+                        </picture>
                     </div>
-                    <p class="history-one">The history of Bose Corporation began 
-                        with disappointment. In 1956, MIT graduate student Amar Bose bought one 
-                        of the best stereo systems at the time for his home.
-                        After a few minutes of listening to the audio recording, his bewilderment turned 
-                        to disappointment. 
-                    </p>
-                    <img class="history-img_one" src="./images/guys.jpg" alt="history photo two guys" width="280">
-                    <p class="history-two">
-                        From Amar's point of view, the sound was 
-                        so flat and unnatural that it was better not to listen 
-                        to the music at all than to listen to it in such a distorted form.
-                    </p>
-                    
-                    <p class="history-three">
-                        Bose's frustration grew into a firm determination 
-                        to build audio equipments that would reproduce sound 
-                        with impeccable accuracy and naturalness
-                    </p>
-                    <img class="history-img_two" src="./images/amar.jpg" alt="arnar bose" width="280">
-                    <div class="quotes">
-                        <svg class="quotes-dots">
-                            <use href="./images/symbol-defs.svg#icon-double"></use>
-                        </svg>
-                        <h3 class="history-quote">Never stop dreaming. Always dream of the best, 
-                            and think about how to achieve it.
-                        </h3>
-                        <p class="history-quote_p">Amar Bose is a company founder </p>
+                    <div class="h-two">
+                        <p class="history-two">
+                            From Amar's point of view, the sound was 
+                            so flat and unnatural that it was better not to listen 
+                            to the music at all than to listen to it in such a distorted form.
+                        </p>
                     </div>
+                    <div class="h-three">
+                            <p class="history-three">
+                                Bose's frustration grew into a firm determination 
+                                to build audio equipments that would reproduce sound 
+                                with impeccable accuracy and naturalness
+                            </p>
+                            <div class="history-img_two">
+                                <picture>
+                                    <source srcset="./images/desktop/amar.jpg 1x,
+                                            ./images/desktop/amar@2x.jpg 2x"
+                                            media="(min-width: 1440px)"/>
+                                    <source srcset="./images/tablet/amar.jpg 1x,
+                                            ./images/tablet/amar@2x.jpg 2x" width="294"
+                                            media="(min-width: 768px)"/>
+                                    <img src="./images/mobile-img/amar.jpg"
+                                            alt="amar bose" width="280"/>
+                                </picture>
+                            </div>
+        
+                            <div class="quotes">
+                                <svg class="quotes-dots">
+                                    <use href="./images/symbol-defs.svg#icon-double"></use>
+                                </svg>
+                                <h3 class="history-quote">Never stop dreaming. Always dream of the best, 
+                                    and think about how to achieve it.
+                                </h3>
+                                <p class="history-quote_p">Amar Bose is a company founder </p>
+                            </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -298,10 +395,41 @@
             <h1 class="visually-hidden">BOSE NC 700</h1>
             <div class="container">
                 <div class="order-area">
-                    <h2>bose nc 700</h2>
-                    <div class="check-input">
-                        <input class="check-input_choose" type="radio" name="check">
-                        <input class="check-input_choose" type="radio" name="check">
+                    <h2 class="order-area_title">bose nc 700</h2>
+                    <div class="order-pic_one">
+                        <picture>
+                            <source srcset="./images/desktop/black_side.jpg 1x,
+                                    ./images/desktop/black_side@2x.jpg 2x"
+                                    media="(min-width: 1440px)"/>
+                            <source srcset="./images/tablet/black_side.jpg 1x,
+                                    ./images/tablet/black_side@2x.jpg 2x" width="648"
+                                    media="(min-width: 768px)"/>
+                            <img src="./images/mobile-img/black_side.jpg"
+                                    alt="black bose headphones"
+                                    width="280"/>
+                        </picture>
+                    </div>
+                    <div class="order-pic_two">
+                        <picture>
+                            <source srcset="./images/desktop/grey_down.jpg 1x,
+                                    ./images/desktop/grey_down@2x.jpg 2x"
+                                    media="(min-width: 1440px)"/>
+                            <source srcset="./images/tablet/grey_side.jpg 1x,
+                                    ./images/tablet/grey_side@2x.jpg 2x" width="648"
+                                    media="(min-width: 768px)"/>
+                            <img src="./images/mobile-img/grey_side.jpg"
+                                    alt="grey bose headphones"
+                                    width="280"/>
+                        </picture>
+
+                    </div>
+                    <div class="checks">
+                        <div class="check-input_black">
+                            <button type="button" class="check-input_choose">
+                        </div>
+                        <div class="check-input_grey">
+                            <button class="check-input_choose" type="button">
+                        </div>
                     </div>
                     <ul class="preferences list">
                         <li class="preferences-item">
@@ -323,12 +451,9 @@
                             </svg>
                         </li>
                     </ul>
-                    <span>14 999</span>
-                    <button type="button">order</button>
-                    <div>
-                        <img src="" alt="black bose headphones" width="">
-                        <img src="" alt="white bose headphones" width="">
-                    </div>
+                    <span class="order-price">14 999</span>
+                    <button class="main-order" type="button">заказать</button>
+                
                 </div>
             </div>
         </section>
@@ -336,63 +461,78 @@
         <section class="feedback">
             <h1 class="visually-hidden">Feedback</h1>
             <div class="container">
-                <div>
-                    <img src="" alt="woman in headphones with a book" width="">
-                </div>
-                <div>
-                    <div>
-                        <h2>feedback</h2>
-                        <p>We'll help you find the right headphones for you.</p>
-                    </div>
-                    <div>
-                        <form>
-                            <div>
-                                <label for="name" class="form-label"></label>
-                                <input type="text" id="name" class="form-input" placeholder="Your name">
-                            </div>
-                            <div>
-                                <label for="email" class="form-label"></label>
-                                <input type="email" id="email" class="form-input" placeholder="Your e-mail">
-                            </div>
-                            <div>
-                                <textarea name="message" id="" cols="30" rows="10" class="form-area">Send us a message</textarea>
-                            </div>
-                            <div>
-                                <input type="checkbox" class="checkbox">
-                                <label for="check" class="form-label">I agree to the privacy policy</label>
-                            </div>
-                            <button type="submit">send</button>
-                        </form>
+                <div class="feedback-area">
+                    <picture>
+                        <source srcset="./images/desktop/feedback_woman.jpg 1x,
+                                ./images/desktop/feedback_woman@2x.jpg 2x"
+                                media="(min-width: 1440px)"/>
+                        <source srcset="./images/tablet/feedback_woman.jpg 1x,
+                                ./images/tablet/feedback_woman@2x.jpg 2x" width="648"
+                                media="(min-width: 768px)"/>
+                        <img src="./images/mobile-img/feedback_woman.jpg"
+                                alt="woman in headphones with a book"
+                                width="280"/>
+                    </picture>
+
+                    <div class="feedback-intro">
+                        <div class="feedback-help">
+                            <h2 class="feedback-help_title">feedback</h2>
+                            <p class="feedback-help_p">We'll help you find the right headphones for you.</p>
+                        </div>
+                        <div>
+                            <form class="feedback-form">
+                                <div class="feedback-form_item">
+                                    <label class="form-label" for="name"></label>
+                                    <input class="form-input" type="text" id="name" placeholder="Your name">
+                                </div>
+                                <div class="feedback-form_item">
+                                    <label class="form-label" for="email"></label>
+                                    <input class="form-input" type="email" id="email" placeholder="Your e-mail">
+                                </div>
+                                <div class="feedback-form_item">
+                                    <textarea class="form-area" name="message" id="" cols="" rows=""placeholder="Send us a message"></textarea>
+                                </div>
+                                <div class="feedback-form_check">
+                                    <input class="checkbox" type="checkbox">
+                                    <label class="check-label" for="check"><span>I agree to the </span><a class="privacy" href="">privacy policy</a></label>
+                                </div>
+                                <button class="feedback-btn" type="submit">send</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <footer>
+        <footer class="footer">
             <div class="container">
-                <div>
-                    <ul class="list">
-                        <li>
-                            <a href="">characteristics</a>
-                        </li>
-                        <li>
-                            <a href="">history</a>
-                        </li>
-                        <li>
-                            <a href="">reviews</a>
-                        </li>
-                        <li>
-                            <a href="">Payment and delivery</a>
-                        </li>
-                        <li>
-                            <a href="">Store addresses</a>
-                        </li>
-                        <li>
-                            <a href="">faq</a>
-                        </li>
-                    </ul>
-                    <a href="tel:88001111111">8(800)111-11-11</a>
-                </div>
+                <div class="footer-box">
+                    <div class="lists">
+                        <ul class="footer-links list">
+                            <li class="footer-link">
+                                <a href="">Characteristics</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="">History</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="">Reviews</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-links list">
+                            <li class="footer-link">
+                                <a href="">Payment and delivery</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="">Store addresses</a>
+                            </li>
+                            <li class="footer-link">
+                                <a href="">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                <a href="tel:88001111111" class="footer-tel">8(800)111-11-11</a>
+                </div>  
             </div>
         </footer>
     </main>
